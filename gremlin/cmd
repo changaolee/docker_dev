@@ -1,0 +1,8 @@
+docker run -d \
+--name gremlin-server \
+--privileged=true \
+-p 8182:8182 \
+tinkerpop/gremlin-server
+
+:remote connect tinkerpop.server conf/remote.yaml
+:remote console

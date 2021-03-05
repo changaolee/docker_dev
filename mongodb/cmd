@@ -1,0 +1,7 @@
+docker run -d \
+--name mongodb \
+--privileged=true \
+-p 27017:27017 \
+-v /Users/lichangao/Docker/mongodb/config:/data/configdb \
+-v /Users/lichangao/Docker/mongodb/data:/data/db \
+mongo

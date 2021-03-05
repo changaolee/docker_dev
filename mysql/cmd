@@ -1,0 +1,8 @@
+docker run -d \
+--name mysql \
+--privileged=true \
+-p 3306:3306 \
+-v /Users/lichangao/Docker/mysql/config/mysqld.cnf:/etc/mysql/mysql.conf.d/mysqld.cnf \
+-v /Users/lichangao/Docker/mysql/data:/var/lib/mysql \
+-e  MYSQL_ROOT_PASSWORD="123456" \
+mysql:5.7
